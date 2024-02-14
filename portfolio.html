@@ -1,35 +1,267 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>portfolio Tushar Kumar</title>
+  <link rel="stylesheet" href="website.css">
+</head>
+<body>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="destop-nav">
-      <div class="logo">Tushar Naugain</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about"> About</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Tushar Kumar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toogleMenu()">
-          <span> </span>
-          <span> </span>
-          <span> </span>
-          <span> </span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design | Codehal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tushar Kumar</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Tushar Kumar</h1>
+            <p>
+                I am is a dynamic individual currently pursuing his Bachelor's degree in Technology.
+				In addition to my technical skills. I understand the importance of effective communication in the tech industry. I am  constantly working on improving my communication and collaboration skills to complement my techrical expertise
+            </p>
+            <p>As I progress in my academic and professional journey, I am enthusiastic about the opportunities to further develop my skills, contribute to meaningful projects, and make a positive mark on the world through the power of computer science.</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/NaugainTushar"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/__skipper_04/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/tushar-naugain-aa3152292/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="resume.html" class="btn">Resume</a>
         </div>
-      </div>
-    </nav>
-    <script src="script.js"></script>
-  </body>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <h3>Student at Fst</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <h3>Software engineer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <h3>Frontend developer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="tushar.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="code.gif" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Tushar Kumar,
+               I am pursing B tech from function up school of technology 
+            </h3>
+            <p>
+                This website is my personal blog where I write about web development
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading my blog posts and
+                found
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>SKills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>HTML</h3>
+                <p>HTML, which stands for Hypertext Markup Language, is a fundamental component of web development. It is used to create and organize the structure of web pages. HTML is a markup language that defines the elements of a web page, such as headings, paragraphs, lists, links, and images.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>CSS</h3>
+                <p>CSS, or Cascading Style Sheets, is a fundamental technology used in web development to control the presentation and layout of web pages. It allows developers to apply styles, such as colors, fonts, spacing, and positioning, to HTML elements.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Java script</h3>
+                <p>java script is a programing language its a dynamically typed language its very popular language all devloper use this language and its high level programing language </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="tic.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>tic-tac-toe</h4>
+                    <p>create a tic tac game using for HTML CSS and JAVASCRIPT</p>
+                    <a href="tic-tac.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Simple calculator</h4>
+                    <p>create a simple calculator using HTML CSS and JAVASCRIPT</p>
+                    <a href="calculator.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="download.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Travel vlog</h4>
+                    <p>create a Travel vlog  using html css.</p>
+                    <a href="travel.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="tracker.jpeg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Expense tracker</h4>
+                    <p>create a Expense tracker  using html css and javascript.</p>
+                    <a href="Tracker.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <div class="testimonial-container">
+        <h2 class="heading">My <span>Self</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="tushar.jpeg" alt="">
+                        <h3>Tushar</h3>
+                        <p>my name is Tushar Kumar I am pursing b tech function up school of technologyI am is a dynamic individual currently pursuing his Bachelor's degree in Technology. <br><br>
+                            In addition to my technical skills. I understand the importance of effective communication in the tech industry. I am  constantly working on improving my communication and collaboration skills to complement my techrical expertise</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="tushar.jpej" alt="">
+                        <h3>Nikhil(web devloper) </h3>
+                        <p>I am is a dynamic individual currently pursuing his Bachelor's degree in Technology. <br><br>
+                            In addition to my technical skills. I understand the importance of effective communication in the tech industry. I am  constantly working on improving my communication and collaboration skills to complement my techrical expertise.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="tushar.jpeg" alt="">
+                        <h3>CodewithsNikhil</h3>
+                        <p>As I progress in my academic and professional journey, I am enthusiastic about the opportunities to further develop my skills, contribute to meaningful projects, and make a positive mark on the world through the power of computer science.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <center><p>Copyright &copy; 2024 by  | All Rights Reserved By CodewithNikhil</p></center>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+      <canvas id="canvasbg"></canvas>
+<canvas id="canvas"></canvas>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+    </defs>
+</svg>
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script src="website.java"></script>
+  <script  src="website.js"></script>
+
+</body>
 </html>
